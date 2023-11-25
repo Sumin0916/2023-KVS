@@ -1,6 +1,6 @@
 STATIC_SRCS = static_main.c
 DYNAMIC_SRCS = dynamic_main.c
-LIBSRCS = open.c close.c set.c get.c 
+LIBSRCS = open.c close.c set.c get.c do_snapshot.c 
 STATIC_TARG = kvs_static
 DYNAMIC_TARG = kvs_dynamic
 

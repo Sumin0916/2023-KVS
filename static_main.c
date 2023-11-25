@@ -25,6 +25,7 @@ int main()
 		}
 		memset(line, 0, LINE_LENGTH);
 	}
+	do_snapshot(qfile);
 	close(kvs);
 	fclose(qfile);
 	fclose(afile);

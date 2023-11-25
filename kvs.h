@@ -22,3 +22,4 @@ kvs_t* open();
 int close(kvs_t* kvs); // free all memory space 
 int set(kvs_t* kvs, const char* key,const char* value); // return -1 if failed.
 char* get(kvs_t* kvs, const char* key); // return -1  if not found. 
+void do_snapshot(FILE *input_file);
