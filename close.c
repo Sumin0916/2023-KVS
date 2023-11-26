@@ -1,6 +1,6 @@
 #include "kvs.h"
 
-int close(kvs_t* kvs)
+int close_kvs(kvs_t* kvs)
 {
 	node_t* current = kvs->db;
 	node_t* next;
