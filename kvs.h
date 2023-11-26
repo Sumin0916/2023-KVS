@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-#define LINE_LENGTH 101
+#define LINE_LENGTH 201
 
 struct node {
+	char op[50];
 	char key[100];
 	char *value;
 	struct node* next;
@@ -18,8 +19,8 @@ struct kvs{
 typedef struct kvs kvs_t; 
 
 
-kvs_t* open();
+kvs_t* open(FILE *input_file);
 int close(kvs_t* kvs); // free all memory space 
-int set(kvs_t* kvs, const char* key,const char* value); // return -1 if failed.
+int set(kvs_t* kvs, const char *op, const char* key,const char* value); // return -1 if failed.
 char* get(kvs_t* kvs, const char* key); // return -1  if not found. 
-void do_snapshot(FILE *input_file);
+void do_snapshot(kvs_t *kvs);
