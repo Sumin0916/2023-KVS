@@ -1,9 +1,9 @@
 STATIC_SRCS = static_main.c
 DYNAMIC_SRCS = dynamic_main.c
-LIBSRCS = open.c close.c set.c get.c do_snapshot_baseline.c do_snapshot_custom.c
+LIBSRCS = open.c close.c set.c get.c do_snapshot_baseline.c do_snapshot_custom.c do_recovery_baseline.c do_recovery_custom.c
 STATIC_TARG = kvs_static
 DYNAMIC_TARG = kvs_dynamic
-DATA_FILES = answer.dat kvs.img
+DATA_FILES = answer.dat
 
 CC = gcc
 OPTS = -Wall -g

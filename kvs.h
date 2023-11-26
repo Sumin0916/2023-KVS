@@ -25,3 +25,5 @@ int set(kvs_t* kvs, const char *op, int key,const char* value); // return -1 if 
 char* get(kvs_t* kvs, int key); // return -1  if not found. 
 void do_snapshot_base(kvs_t *kvs);
 void do_snapshot_custom(kvs_t *kvs);
+kvs_t* do_recovery_base(kvs_t *kvs);
+kvs_t* do_recovery_custom(kvs_t *kvs);
