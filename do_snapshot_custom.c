@@ -12,7 +12,7 @@ void do_snapshot_custom(kvs_t *kvs){
 	node_t *current = kvs->db->next;
 	while(current != NULL){
 		char BUFFER[LINE_LENGTH+5];
-		int length = snprintf(BUFFER, LINE_LENGTH+5, "%s,%s,%s\n", current->op, current->key, current->value);
+		int length = snprintf(BUFFER, LINE_LENGTH+5, "%s,tweet%d,%s\n", current->op, current->key, current->value);
 		if(write(output_file, BUFFER, length) == -1){
 			perror("RECOV WRITE ERROR");
 			return;

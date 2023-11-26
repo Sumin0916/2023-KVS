@@ -9,7 +9,7 @@ void do_snapshot_base(kvs_t *kvs){
 	}
 	node_t *current = kvs->db->next;
 	while(current != NULL){
-		fprintf(output_file, "%s,%s,%s\n", current->op, current->key, current->value);
+		fprintf(output_file, "%s,tweet%d,%s\n", current->op, current->key, current->value);
 		current = current->next;
 	}
 	fclose(output_file);

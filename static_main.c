@@ -13,7 +13,7 @@ int main()
 	char line[LINE_LENGTH];
 	while (fgets(line, LINE_LENGTH, qfile) != NULL) {
 		const char* operation = strtok(line, ",");
-		const char* key= strtok(NULL, ",");
+		int key = (int)atoi(strtok(NULL, ",")+5);
 		const char* value = strtok(NULL, ",");
 		if(strcmp(operation, "get") == 0){
 			char *res = get(kvs, key);

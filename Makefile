@@ -3,6 +3,7 @@ DYNAMIC_SRCS = dynamic_main.c
 LIBSRCS = open.c close.c set.c get.c do_snapshot_baseline.c do_snapshot_custom.c
 STATIC_TARG = kvs_static
 DYNAMIC_TARG = kvs_dynamic
+DATA_FILES = answer.dat kvs.img
 
 CC = gcc
 OPTS = -Wall -g
@@ -40,4 +41,4 @@ $(LDLL) : $(LOBJS)
 	$(CC) $(OPTS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(LOBJS) $(LARS) $(TARG) $(LDLL) $(STATIC_OBJS) $(DYNAMIC_OBJS) $(STATIC_TARG) $(DYNAMIC_TARG)
+	rm -f $(OBJS) $(LOBJS) $(LARS) $(TARG) $(LDLL) $(STATIC_OBJS) $(DYNAMIC_OBJS) $(STATIC_TARG) $(DYNAMIC_TARG) $(DATA_FILES)
