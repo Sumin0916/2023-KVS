@@ -10,8 +10,13 @@ int main()
 	}	
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	kvs_t* kvs = open_kvs(qfile);
 	kvs_t* mem_kvs = open_kvs(qfile);
+=======
+	kvs_t* kvs = open(qfile);
+	kvs_t* mem_kvs = open(qfile);
+>>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225
 =======
 	kvs_t* kvs = open(qfile);
 	kvs_t* mem_kvs = open(qfile);
@@ -37,9 +42,15 @@ int main()
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_snapshot_custom(mem_kvs);
 	close_kvs(kvs);
 	close_kvs(mem_kvs);
+=======
+	do_snapshot(mem_kvs);
+	close(kvs);
+	close(mem_kvs);
+>>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225
 =======
 	do_snapshot(mem_kvs);
 	close(kvs);

@@ -3,7 +3,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 void do_snapshot_base(kvs_t *kvs){
+=======
+void do_snapshot(kvs_t *kvs){
+>>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225
 =======
 void do_snapshot(kvs_t *kvs){
 >>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225
@@ -18,7 +22,11 @@ void do_snapshot(kvs_t *kvs){
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	node_t *current = kvs->db->next;
+=======
+	node_t *current = kvs->db;
+>>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225
 =======
 	node_t *current = kvs->db;
 >>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225

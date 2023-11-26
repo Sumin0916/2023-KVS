@@ -3,7 +3,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 kvs_t* open_kvs(FILE * input_file)
+=======
+kvs_t* open(FILE * input_file)
+>>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225
 =======
 kvs_t* open(FILE * input_file)
 >>>>>>> 90acfc6a7dfb4d76ef7c91ff66ca4ffdcd01d225
