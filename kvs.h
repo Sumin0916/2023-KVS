@@ -2,7 +2,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-#define LINE_LENGTH 4500
+#define LINE_LENGTH 4600
 
 struct node {
 	char op[5];

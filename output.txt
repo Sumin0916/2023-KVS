@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.11048' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 1794006620
+Trigger: Program termination
+Profiled target:  ./kvs_static (PID 11048, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir            
+--------------------------------------------------------------------------------
+5,167,513,820  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir             file:function
+--------------------------------------------------------------------------------
+2,682,878,358  do_recovery_custom.c:do_recovery_custom [/root/KVS/kvs_static]
+1,340,302,456  /build/glibc-BHL3KM/glibc-2.31/io/../sysdeps/unix/sysv/linux/read.c:read [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+  361,945,098  /build/glibc-BHL3KM/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+  335,075,614  ???:0x0000000000109210 [???]
+   63,563,295  /usr/lib/gcc/x86_64-linux-gnu/9/include/smmintrin.h:__strcspn_sse42
+   62,752,010  /build/glibc-BHL3KM/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   57,648,555  /build/glibc-BHL3KM/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcspn-c.c:__strcspn_sse42 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   38,021,090  /build/glibc-BHL3KM/glibc-2.31/stdio-common/vfprintf-internal.c:__vfprintf_internal [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   31,571,178  /build/glibc-BHL3KM/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   30,015,421  /build/glibc-BHL3KM/glibc-2.31/libio/genops.c:_IO_default_xsputn [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   27,836,877  /build/glibc-BHL3KM/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcpy-avx2.S:__strcpy_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   22,305,738  /build/glibc-BHL3KM/glibc-2.31/malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   14,389,898  /build/glibc-BHL3KM/glibc-2.31/malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   14,007,275  /build/glibc-BHL3KM/glibc-2.31/stdlib/../stdlib/strtol_l.c:____strtol_l_internal [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    7,447,430  /build/glibc-BHL3KM/glibc-2.31/string/strtok_r.c:strtok_r [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    7,288,506  /build/glibc-BHL3KM/glibc-2.31/malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    6,898,672  /build/glibc-BHL3KM/glibc-2.31/string/../sysdeps/x86_64/multiarch/strchr-avx2.S:__strchrnul_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    6,582,994  /build/glibc-BHL3KM/glibc-2.31/stdio-common/_itoa.c:_itoa_word [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    5,426,206  /build/glibc-BHL3KM/glibc-2.31/string/../sysdeps/x86_64/multiarch/strspn-c.c:__strspn_sse42 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
